@@ -1,0 +1,96 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1538204772389" stop="1538204772560">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1538204772389" status="passed" stop="1538204772394">
+      <name>Test01.test01</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5952-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538204772394" status="passed" stop="1538204772394">
+          <name>执行学院新增操作</name>
+          <title>执行学院新增操作</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538204772395" status="failed" stop="1538204772523">
+      <name>Test01.test02</name>
+      <failure>
+        <message>AssertionError: assert False</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x02F61F90&gt;
+
+    @allure.step("执行学院更新操作")
+    
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    def test02(self):
+        allure.attach("断言开始","学院是否更新成功")
+        print("执行学院更新操作")
+        allure.attach("断言结束","更新成功！")
+&gt;       assert False
+E       assert False
+
+Scripts\test01.py:16: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="5952-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538204772397" status="failed" stop="1538204772399">
+          <name>执行学院更新操作</name>
+          <title>执行学院更新操作</title>
+          <attachments>
+            <attachment source="ef42f4e5-c48a-4a5d-af8e-b22210932d52-attachment.txt" title="断言开始" type="text/plain"/>
+            <attachment source="58aaa923-7446-4085-8b7d-0289fabba978-attachment.txt" title="断言结束" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1538204772517" status="failed" stop="1538204772517">
+          <name>执行学院更新操作</name>
+          <title>执行学院更新操作</title>
+          <attachments>
+            <attachment source="d40fbf73-0aca-44a3-adb1-f6d33c4fc060-attachment.txt" title="断言开始" type="text/plain"/>
+            <attachment source="5295715b-d4c7-4b3e-ae64-c8ee17342d5a-attachment.txt" title="断言结束" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538204772540" status="failed" stop="1538204772560">
+      <name>Test01.test03</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x02FCE130&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test03(self):
+        print("test03被执行")
+&gt;       assert 0
+E       assert 0
+
+Scripts\test01.py:21: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="5952-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
