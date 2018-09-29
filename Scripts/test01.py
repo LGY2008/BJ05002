@@ -21,3 +21,5 @@ class Test01():
         assert 0
     def test04(self):
         print("test04被执行")
+    def test05(self):
+        print("test05被执行")
