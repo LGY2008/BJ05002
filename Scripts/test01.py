@@ -3,7 +3,7 @@ import pytest
 
 
 class Test01():
-    @allure.step("执行学院新增操作")
+    @allure.step("执行学院新增操作02")
     def test01(self):
         print("执行学院新增操作")
     @allure.step("执行学院更新操作")
